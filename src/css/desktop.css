@@ -1,0 +1,12 @@
+body {
+  min-width: 900px;
+}
+
+.page {
+  background-image: linear-gradient(to bottom, var(--LightMagenta), var(--LightViolet));
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  background-size: 30% 90%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}

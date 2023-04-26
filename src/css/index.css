@@ -1,0 +1,164 @@
+/*
+ Name: Chat app CSS Illustration.
+ Description: A Frontendmentor.io coding challenge.
+ Author: Federico Borzani
+ Author URL:  https://github.com/eserengo/
+*/
+
+@import "variables.css";
+
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+  padding: 0%;
+  margin: 0%;
+  user-select: none;
+  font-family: "Rubik";
+  font-size: 16px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  min-height: 100vh;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+.illustration,
+.btn-primary,
+.chat .self,
+.form-check-input:checked {
+  background-color: var(--White);
+}
+
+.user .status,
+.chat .other,
+.chat .self,
+.radio span,
+.attribution > span {
+  font-size: 70%;
+}
+
+.illustration {
+  width: 400px;
+  min-width: 400px;
+  border: 1px solid var(--White);
+  border-radius: 24px;
+  box-shadow: 0px 4px 8px var(--DarkGrayishViolet-Paragraph), 0px 8px 16px var(--LightGrey);
+}
+
+.btn:not(.post > .btn) {
+  border: none;
+  width: 50%;
+  height: 40px;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.main {
+  background-color: var(--LightGrayishViolet-AppBackground);
+  border-radius: 24px;
+}
+
+.user {
+  background-image: linear-gradient(45deg, var(--LightMagenta), var(--LightViolet));
+  border-radius: 24px 24px 8px 8px;
+}
+
+.user .fa,
+.user .name,
+.radio {
+  color: var(--White);
+}
+
+.user .fa,
+.form-check-input:hover {
+  cursor: pointer;
+}
+
+.user .status {
+  color: var(--PaleViolet-SubHeadingAtTheTopOfTheAppUI);
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border: 2px solid var(--White);
+  border-radius: 50%;
+}
+
+.chat .other {
+  background-color: var(--LightGrey);
+  color: var(--ModerateViolet-ChatOnTheLeft);
+  border-radius: 12px 12px 12px 1px;
+}
+
+.chat .self {
+  display: block;
+  color: var(--DesaturatedDarkViolet-ChatOnTheRight);
+  text-align: right;
+  border-radius: 12px 12px 1px 12px;
+}
+
+.chat .self,
+.gallery {
+  margin-left: 50%;
+}
+
+.radio {
+  background-image: linear-gradient(45deg, var(--LightMagenta), var(--LightViolet));
+  border-radius: 12px 12px 12px 1px;
+}
+
+.form-check-input {
+  background-color: transparent;
+  border: 1px solid var(--VeryLightMagenta-RadioButtonOutline);
+  border-radius: 50%;
+}
+
+.form-check-input:checked {
+  border: none;
+}
+
+.textarea {
+  border: 1px solid var(--LightGrayishViolet-AppBackground);
+  border-radius: 32px;
+}
+
+.textarea::placeholder {
+  color: var(--GrayishBlue-PlaceholderText);
+}
+
+.post > .btn {
+  width: 40px;
+  height: 40px;
+  background-color: var(--VeryDarkDesaturatedViolet-SubmitButtonBackground);
+  border: 1px solid var(--VeryDarkDesaturatedViolet-SubmitButtonBackground);
+  right: 12px;
+  bottom: 8px;
+}
+
+.post > .btn > i {
+  margin: 4px 0px 0px 2px;
+}
+
+.description {
+  width: 400px;
+  min-width: 400px;
+}
+
+.title {
+  color: var(--VeryDarkDesaturatedViolet-MainHeading);
+}
+
+.para {
+  color: var(--DarkGrayishViolet-Paragraph);
+}
+
+.attribution > span > a {
+  font-size: 90%;
+}
